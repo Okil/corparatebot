@@ -15,9 +15,9 @@ def log(message):
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['send'])
-def send_welcome(message):
+def send_welcome(message)
     msg = bot.reply_to(message, """\
-        Привет Я почта бот, чтоб отправить email \n сперва ведите логин от webmail.infosystems.uz
+        Привет Я почта бот, чтоб отправить email \n ведите логин от webmail.infosystems.uz
     """)
     bot.register_next_step_handler(msg, process_login_step)
 
